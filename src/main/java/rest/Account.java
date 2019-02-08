@@ -13,19 +13,20 @@ public class Account {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	
+
 	private String name;
 
 	private BigDecimal total;
 
-  private BigDecimal current;
+	private BigDecimal current;
 
-  public BigDecimal getCurrent() {
+	public BigDecimal getCurrent() {
 		return current;
 	}
+
 	public String getName() {
-    return name;
-  }
+		return name;
+	}
 
 	public BigDecimal getTotal() {
 		return total;
@@ -36,8 +37,8 @@ public class Account {
 	}
 
 	public void setName(String name) {
-    this.name = name;
-  }
+		this.name = name;
+	}
 
 	public void setTotal(BigDecimal firstName) {
 		this.total = firstName;
