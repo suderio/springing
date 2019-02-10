@@ -56,15 +56,11 @@ public class RepositoriesTests {
   @Test
   public void shouldCreateEntity() throws Exception {
 
-    mockMvc
-        .perform(post("/account1")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+    mockMvc.perform(post("/account1").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
         .andExpect(status().isCreated())
         .andExpect(header().string("Location", containsString("account1/")));
 
-    mockMvc
-        .perform(post("/account2")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+    mockMvc.perform(post("/account2").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
         .andExpect(status().isCreated())
         .andExpect(header().string("Location", containsString("account2/")));
   }
@@ -72,95 +68,77 @@ public class RepositoriesTests {
   @Test
   public void shouldRetrieveEntity() throws Exception {
 
-    MvcResult mvcResult = mockMvc
-        .perform(post("/account1")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    MvcResult mvcResult =
+        mockMvc.perform(post("/account1").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     String location = mvcResult.getResponse().getHeader("Location");
     mockMvc.perform(get(location)).andExpect(status().isOk())
-        .andExpect(jsonPath("$.name").value("Rick"))
-        .andExpect(jsonPath("$.total").value("100.0"));
+        .andExpect(jsonPath("$.name").value("Rick")).andExpect(jsonPath("$.total").value("100.0"));
 
-    mvcResult = mockMvc
-        .perform(post("/account2")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    mvcResult =
+        mockMvc.perform(post("/account2").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     location = mvcResult.getResponse().getHeader("Location");
     mockMvc.perform(get(location)).andExpect(status().isOk())
-        .andExpect(jsonPath("$.name").value("Rick"))
-        .andExpect(jsonPath("$.total").value("100.0"));
+        .andExpect(jsonPath("$.name").value("Rick")).andExpect(jsonPath("$.total").value("100.0"));
   }
 
   @Test
   public void shouldQueryEntity() throws Exception {
 
-    mockMvc
-        .perform(post("/account1")
-            .content("{ \"name\": \"Rick\", \"total\":\"100.0\"}"))
+    mockMvc.perform(post("/account1").content("{ \"name\": \"Rick\", \"total\":\"100.0\"}"))
         .andExpect(status().isCreated());
 
     mockMvc.perform(get("/account1/search/findByName?name={name}", "Rick"))
         .andExpect(status().isOk())
         .andExpect(jsonPath("$._embedded.account1[0].total").value("100.0"));
 
-    mockMvc
-        .perform(post("/account2")
-            .content("{ \"name\": \"Rick\", \"total\":\"100.0\"}"))
+    mockMvc.perform(post("/account2").content("{ \"name\": \"Rick\", \"total\":\"100.0\"}"))
         .andExpect(status().isCreated());
 
     mockMvc.perform(get("/account2/search/findByName?name={name}", "Rick"))
         .andExpect(status().isOk())
         .andExpect(jsonPath("$._embedded.account2[0].total").value("100.0"));
-    
-    mockMvc.perform(get("/account"))
-    .andExpect(status().isOk());
+
+    mockMvc.perform(get("/account")).andExpect(status().isOk());
   }
 
   @Test
   public void shouldUpdateEntity() throws Exception {
 
-    MvcResult mvcResult = mockMvc
-        .perform(post("/account1")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    MvcResult mvcResult =
+        mockMvc.perform(post("/account1").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     String location = mvcResult.getResponse().getHeader("Location");
 
-    mockMvc
-        .perform(
-            put(location).content("{\"name\": \"Morty\", \"total\":\"500.0\"}"))
+    mockMvc.perform(put(location).content("{\"name\": \"Morty\", \"total\":\"500.0\"}"))
         .andExpect(status().isNoContent());
 
     mockMvc.perform(get(location)).andExpect(status().isOk())
-        .andExpect(jsonPath("$.name").value("Morty"))
-        .andExpect(jsonPath("$.total").value("500.0"));
+        .andExpect(jsonPath("$.name").value("Morty")).andExpect(jsonPath("$.total").value("500.0"));
 
-    mvcResult = mockMvc
-        .perform(post("/account2")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    mvcResult =
+        mockMvc.perform(post("/account2").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     location = mvcResult.getResponse().getHeader("Location");
 
-    mockMvc
-        .perform(
-            put(location).content("{\"name\": \"Morty\", \"total\":\"500.0\"}"))
+    mockMvc.perform(put(location).content("{\"name\": \"Morty\", \"total\":\"500.0\"}"))
         .andExpect(status().isNoContent());
 
     mockMvc.perform(get(location)).andExpect(status().isOk())
-        .andExpect(jsonPath("$.name").value("Morty"))
-        .andExpect(jsonPath("$.total").value("500.0"));
+        .andExpect(jsonPath("$.name").value("Morty")).andExpect(jsonPath("$.total").value("500.0"));
   }
 
   @Test
   public void shouldPartiallyUpdateEntity() throws Exception {
 
-    MvcResult mvcResult = mockMvc
-        .perform(post("/account1")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    MvcResult mvcResult =
+        mockMvc.perform(post("/account1").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     String location = mvcResult.getResponse().getHeader("Location");
 
@@ -171,10 +149,9 @@ public class RepositoriesTests {
         .andExpect(jsonPath("$.current").value("10.0"))
         .andExpect(jsonPath("$.total").value("100.0"));
 
-    mvcResult = mockMvc
-        .perform(post("/account2")
-            .content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    mvcResult =
+        mockMvc.perform(post("/account2").content("{\"name\": \"Rick\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     location = mvcResult.getResponse().getHeader("Location");
 
@@ -189,20 +166,18 @@ public class RepositoriesTests {
   @Test
   public void shouldDeleteEntity() throws Exception {
 
-    MvcResult mvcResult = mockMvc
-        .perform(post("/account1")
-            .content("{ \"name\": \"Morty\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    MvcResult mvcResult =
+        mockMvc.perform(post("/account1").content("{ \"name\": \"Morty\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     String location = mvcResult.getResponse().getHeader("Location");
     mockMvc.perform(delete(location)).andExpect(status().isNoContent());
 
     mockMvc.perform(get(location)).andExpect(status().isNotFound());
 
-    mvcResult = mockMvc
-        .perform(post("/account2")
-            .content("{ \"name\": \"Morty\", \"total\":\"100.0\"}"))
-        .andExpect(status().isCreated()).andReturn();
+    mvcResult =
+        mockMvc.perform(post("/account2").content("{ \"name\": \"Morty\", \"total\":\"100.0\"}"))
+            .andExpect(status().isCreated()).andReturn();
 
     location = mvcResult.getResponse().getHeader("Location");
     mockMvc.perform(delete(location)).andExpect(status().isNoContent());

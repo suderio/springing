@@ -30,8 +30,8 @@ public class AccountRepository {
 
   @RequestMapping(method = RequestMethod.GET)
   public HttpEntity<Accounts> get() {
-    Accounts accounts = new Accounts(Iterables.concat(
-        firstAccountRepository.findAll(), secondAccountRepository.findAll()));
+    Accounts accounts = new Accounts(
+        Iterables.concat(firstAccountRepository.findAll(), secondAccountRepository.findAll()));
     accounts.add(linkTo(methodOn(AccountRepository.class).get()).withSelfRel());
     return new ResponseEntity<>(accounts, HttpStatus.OK);
   }

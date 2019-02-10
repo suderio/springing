@@ -1,33 +1,34 @@
-{"properties": [
-
-  {
-    "name": "app.datasource.first.url",
-    "type": "java.lang.String",
-    "description": "JDBC URL do banco 1"
-  },
-  {
-    "name": "app.datasource.first.username",
-    "type": "java.lang.String",
-    "description": "username do banco 1"
-  },
-  {
-    "name": "app.datasource.first.configuration.maximum-pool-size",
-    "type": "java.lang.String",
-    "description": "Tamanho máximo do pool de conexões do banco 1"
-  },
-  {
-    "name": "app.datasource.second.url",
-    "type": "java.lang.String",
-    "description": "JDBC URL do banco 2"
-  },
-  {
-    "name": "app.datasource.second.username",
-    "type": "java.lang.String",
-    "description": "username do banco 2"
-  },
-  {
-    "name": "app.datasource.second.configuration.maximum-pool-size",
-    "type": "java.lang.String",
-    "description": "Tamanho máximo do pool de conexões do banco 2"
-  }
-]}
+{
+    "properties" : [
+        {
+            "name" : "app.datasource.first.url",
+            "type" : "java.lang.String",
+            "description" : "JDBC URL do banco 1"
+        },
+        {
+            "name" : "app.datasource.first.username",
+            "type" : "java.lang.String",
+            "description" : "username do banco 1"
+        },
+        {
+            "name" : "app.datasource.first.configuration.maximum-pool-size",
+            "type" : "java.lang.String",
+            "description" : "Tamanho máximo do pool de conexões do banco 1"
+        },
+        {
+            "name" : "app.datasource.second.url",
+            "type" : "java.lang.String",
+            "description" : "JDBC URL do banco 2"
+        },
+        {
+            "name" : "app.datasource.second.username",
+            "type" : "java.lang.String",
+            "description" : "username do banco 2"
+        },
+        {
+            "name" : "app.datasource.second.configuration.maximum-pool-size",
+            "type" : "java.lang.String",
+            "description" : "Tamanho máximo do pool de conexões do banco 2"
+        }
+    ]
+}

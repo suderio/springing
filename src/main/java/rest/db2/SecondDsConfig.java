@@ -20,7 +20,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
-@EnableJpaRepositories(entityManagerFactoryRef = "secondEntityManagerFactory", transactionManagerRef = "secondTransactionManager", basePackages = "rest.db2")
+@EnableJpaRepositories(entityManagerFactoryRef = "secondEntityManagerFactory",
+    transactionManagerRef = "secondTransactionManager", basePackages = "rest.db2")
 @EnableTransactionManagement
 public class SecondDsConfig {
   @Bean
@@ -32,18 +33,16 @@ public class SecondDsConfig {
   @Bean
   @ConfigurationProperties("app.datasource.second.configuration")
   public HikariDataSource secondDataSource() {
-    return secondDataSourceProperties().initializeDataSourceBuilder()
-        .type(HikariDataSource.class).build();
+    return secondDataSourceProperties().initializeDataSourceBuilder().type(HikariDataSource.class)
+        .build();
   }
 
   @Bean(name = "secondEntityManagerFactory")
   public LocalContainerEntityManagerFactoryBean secondEntityManagerFactory(
       final EntityManagerFactoryBuilder builder,
       @Qualifier("secondDataSource") DataSource dataSource) {
-    return builder.dataSource(secondDataSource()).packages("rest.db2")
-        .persistenceUnit("secondDb")
-        .properties(singletonMap("hibernate.hbm2ddl.auto", "create-drop"))
-        .build();
+    return builder.dataSource(secondDataSource()).packages("rest.db2").persistenceUnit("secondDb")
+        .properties(singletonMap("hibernate.hbm2ddl.auto", "create-drop")).build();
   }
 
   @Bean(name = "secondTransactionManager")

@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
-@EnableJpaRepositories(entityManagerFactoryRef = "firstEntityManagerFactory", transactionManagerRef = "firstTransactionManager", basePackages = "rest.db1")
+@EnableJpaRepositories(entityManagerFactoryRef = "firstEntityManagerFactory",
+    transactionManagerRef = "firstTransactionManager", basePackages = "rest.db1")
 @EnableTransactionManagement
 public class FirstDsConfig {
   @Primary
@@ -35,19 +36,16 @@ public class FirstDsConfig {
   @Bean
   @ConfigurationProperties("app.datasource.first.configuration")
   public HikariDataSource firstDataSource() {
-    return firstDataSourceProperties().initializeDataSourceBuilder()
-        .type(HikariDataSource.class).build();
+    return firstDataSourceProperties().initializeDataSourceBuilder().type(HikariDataSource.class)
+        .build();
   }
 
   @Primary
   @Bean
   public LocalContainerEntityManagerFactoryBean firstEntityManagerFactory(
-      EntityManagerFactoryBuilder builder,
-      @Qualifier("firstDataSource") DataSource dataSource) {
-    return builder.dataSource(dataSource).packages("rest.db1")
-        .persistenceUnit("firstDb")
-        .properties(singletonMap("hibernate.hbm2ddl.auto", "create-drop"))
-        .build();
+      EntityManagerFactoryBuilder builder, @Qualifier("firstDataSource") DataSource dataSource) {
+    return builder.dataSource(dataSource).packages("rest.db1").persistenceUnit("firstDb")
+        .properties(singletonMap("hibernate.hbm2ddl.auto", "create-drop")).build();
   }
 
   @Primary
