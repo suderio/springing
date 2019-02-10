@@ -113,6 +113,9 @@ public class RepositoriesTests {
     mockMvc.perform(get("/account2/search/findByName?name={name}", "Rick"))
         .andExpect(status().isOk())
         .andExpect(jsonPath("$._embedded.account2[0].total").value("100.0"));
+    
+    mockMvc.perform(get("/account"))
+    .andExpect(status().isOk());
   }
 
   @Test

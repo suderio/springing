@@ -21,7 +21,7 @@ import rest.db2.SecondAccountRepository;
 
 @RestController
 @RequestMapping(path = "/account")
-public class AccountService {
+public class AccountRepository {
   @Autowired
   private FirstAccountRepository firstAccountRepository;
 
@@ -32,7 +32,7 @@ public class AccountService {
   public HttpEntity<Accounts> get() {
     Accounts accounts = new Accounts(Iterables.concat(
         firstAccountRepository.findAll(), secondAccountRepository.findAll()));
-    accounts.add(linkTo(methodOn(AccountService.class).get()).withSelfRel());
+    accounts.add(linkTo(methodOn(AccountRepository.class).get()).withSelfRel());
     return new ResponseEntity<>(accounts, HttpStatus.OK);
   }
 
