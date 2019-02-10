@@ -52,7 +52,6 @@
     <li><a href="surefire-report.html" title="Surefire Report"><span class="none"></span>Surefire Report</a></li>
     <li><a href="clover/index.html" title="Clover"><span class="none"></span>Clover</a></li>
     <li class="active"><a href="#"><span class="none"></span>Checkstyle</a></li>
-    <li><a href="pmd.html" title="PMD"><span class="none"></span>PMD</a></li>
     <li><a href="findbugs.html" title="FindBugs"><span class="none"></span>FindBugs</a></li>
     <li><a href="dependency-check-report.html" title="OWASP dependency check"><span class="none"></span>OWASP dependency check</a></li>
     <li><a href="jdepend-report.html" title="JDepend"><span class="none"></span>JDepend</a></li>
@@ -86,7 +85,7 @@
 <tr class="b">
 <td>10</td>
 <td>0</td>
-<td>30</td>
+<td>29</td>
 <td>0</td></tr></table></div>
 <div class="section">
 <h2><a name="Arquivos"></a>Arquivos</h2>
@@ -107,36 +106,31 @@
 <td>12</td>
 <td>0</td></tr>
 <tr class="b">
-<td><a href="#rest.Application.java">rest/Application.java</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td></tr>
-<tr class="a">
 <td><a href="#rest.db1.FirstAccount.java">rest/db1/FirstAccount.java</a></td>
 <td>0</td>
 <td>2</td>
 <td>0</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#rest.db1.FirstAccountRepository.java">rest/db1/FirstAccountRepository.java</a></td>
 <td>0</td>
 <td>3</td>
 <td>0</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#rest.db1.FirstDsConfig.java">rest/db1/FirstDsConfig.java</a></td>
 <td>0</td>
 <td>3</td>
 <td>0</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#rest.db2.SecondAccount.java">rest/db2/SecondAccount.java</a></td>
 <td>0</td>
 <td>2</td>
 <td>0</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#rest.db2.SecondAccountRepository.java">rest/db2/SecondAccountRepository.java</a></td>
 <td>0</td>
 <td>3</td>
 <td>0</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#rest.db2.SecondDsConfig.java">rest/db2/SecondDsConfig.java</a></td>
 <td>0</td>
 <td>3</td>
@@ -144,21 +138,21 @@
 <div class="section">
 <h2><a name="Regras"></a>Regras</h2>
 <table border="0" class="table table-striped">
-<tr class="a">
+<tr class="b">
 <th>Category</th>
 <th>Regra</th>
 <th>Viola&#xe7;&#xf5;es</th>
 <th>Severidade</th></tr>
-<tr class="b">
+<tr class="a">
 <td>imports</td>
 <td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_imports.html#CustomImportOrder">CustomImportOrder</a>
 <ul>
 <li>sortImportsInGroupAlphabetically: <tt>&quot;true&quot;</tt></li>
 <li>specialImportsRegExp: <tt>&quot;com.google&quot;</tt></li>
 <li>customImportOrderRules: <tt>&quot;STATIC###SPECIAL_IMPORTS###THIRD_PARTY_PACKAGE###STANDARD_JAVA_PACKAGE&quot;</tt></li></ul></td>
-<td>29</td>
+<td>28</td>
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td></tr>
-<tr class="a">
+<tr class="b">
 <td>javadoc</td>
 <td><a class="externalLink" href="http://checkstyle.sourceforge.net/config_javadoc.html#JavadocMethod">JavadocMethod</a>
 <ul>
@@ -176,13 +170,13 @@
 <div class="section">
 <h3 id="rest.Account.java">rest/Account.java</h3>
 <table border="0" class="table table-striped">
-<tr class="b">
+<tr class="a">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
@@ -191,115 +185,100 @@
 <div class="section">
 <h3 id="rest.AccountRepository.java">rest/AccountRepository.java</h3>
 <table border="0" class="table table-striped">
-<tr class="b">
+<tr class="a">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.beans.factory.annotation.Autowired' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L6">6</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.hateoas.ResourceSupport' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L7">7</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.http.HttpEntity' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L8">8</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.http.HttpStatus' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L9">9</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.http.ResponseEntity' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L10">10</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.web.bind.annotation.RequestMapping' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L11">11</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.web.bind.annotation.RequestMethod' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L12">12</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.web.bind.annotation.RestController' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L13">13</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'com.fasterxml.jackson.annotation.JsonCreator' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L15">15</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'com.fasterxml.jackson.annotation.JsonProperty' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE', grupo espera 'SPECIAL_IMPORTS' nesta linha.</td>
 <td><a href="./xref/rest/AccountRepository.html#L16">16</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>'com.google.common.collect.Iterables' deve ser separado do grupo importa&#xe7;&#xe3;o anterior.</td>
 <td><a href="./xref/rest/AccountRepository.html#L17">17</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>javadoc</td>
 <td>JavadocMethod</td>
 <td>Falta o coment&#xe1;rio Javadoc.</td>
 <td><a href="./xref/rest/AccountRepository.html#L31">31</a></td></tr></table></div>
 <div class="section">
-<h3 id="rest.Application.java">rest/Application.java</h3>
-<table border="0" class="table table-striped">
-<tr class="a">
-<th>Severidade</th>
-<th>Category</th>
-<th>Regra</th>
-<th>Mensagem</th>
-<th>Linha</th></tr>
-<tr class="b">
-<td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
-<td>imports</td>
-<td>CustomImportOrder</td>
-<td>Errado ordem lexicogr&#xe1;fica para 'com.zaxxer.hikari.HikariDataSource' importa&#xe7;&#xe3;o. Deve ser antes 'org.springframework.context.annotation.Primary'.</td>
-<td><a href="./xref/rest/Application.html#L10">10</a></td></tr></table></div>
-<div class="section">
 <h3 id="rest.db1.FirstAccount.java">rest/db1/FirstAccount.java</h3>
 <table border="0" class="table table-striped">
-<tr class="a">
+<tr class="b">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'lombok.Data' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE' grupo, esperando que as importa&#xe7;&#xf5;es n&#xe3;o atribu&#xed;dos nesta linha.</td>
 <td><a href="./xref/rest/db1/FirstAccount.html#L10">10</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
@@ -308,25 +287,25 @@
 <div class="section">
 <h3 id="rest.db1.FirstAccountRepository.java">rest/db1/FirstAccountRepository.java</h3>
 <table border="0" class="table table-striped">
-<tr class="b">
+<tr class="a">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.data.repository.PagingAndSortingRepository' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE' grupo, esperando que as importa&#xe7;&#xf5;es n&#xe3;o atribu&#xed;dos nesta linha.</td>
 <td><a href="./xref/rest/db1/FirstAccountRepository.html#L5">5</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.data.repository.query.Param' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE' grupo, esperando que as importa&#xe7;&#xf5;es n&#xe3;o atribu&#xed;dos nesta linha.</td>
 <td><a href="./xref/rest/db1/FirstAccountRepository.html#L6">6</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
@@ -335,25 +314,25 @@
 <div class="section">
 <h3 id="rest.db1.FirstDsConfig.java">rest/db1/FirstDsConfig.java</h3>
 <table border="0" class="table table-striped">
-<tr class="b">
+<tr class="a">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'javax.persistence.EntityManagerFactory' est&#xe1; na ordem errada. Deve estar no 'STANDARD_JAVA_PACKAGE', grupo espera 'THIRD_PARTY_PACKAGE' nesta linha.</td>
 <td><a href="./xref/rest/db1/FirstDsConfig.html#L5">5</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'javax.sql.DataSource' est&#xe1; na ordem errada. Deve estar no 'STANDARD_JAVA_PACKAGE', grupo espera 'THIRD_PARTY_PACKAGE' nesta linha.</td>
 <td><a href="./xref/rest/db1/FirstDsConfig.html#L6">6</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
@@ -362,19 +341,19 @@
 <div class="section">
 <h3 id="rest.db2.SecondAccount.java">rest/db2/SecondAccount.java</h3>
 <table border="0" class="table table-striped">
-<tr class="b">
+<tr class="a">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'lombok.Data' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE' grupo, esperando que as importa&#xe7;&#xf5;es n&#xe3;o atribu&#xed;dos nesta linha.</td>
 <td><a href="./xref/rest/db2/SecondAccount.html#L10">10</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
@@ -383,25 +362,25 @@
 <div class="section">
 <h3 id="rest.db2.SecondAccountRepository.java">rest/db2/SecondAccountRepository.java</h3>
 <table border="0" class="table table-striped">
-<tr class="a">
+<tr class="b">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.data.repository.PagingAndSortingRepository' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE' grupo, esperando que as importa&#xe7;&#xf5;es n&#xe3;o atribu&#xed;dos nesta linha.</td>
 <td><a href="./xref/rest/db2/SecondAccountRepository.html#L5">5</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'org.springframework.data.repository.query.Param' est&#xe1; na ordem errada. Deve estar no 'THIRD_PARTY_PACKAGE' grupo, esperando que as importa&#xe7;&#xf5;es n&#xe3;o atribu&#xed;dos nesta linha.</td>
 <td><a href="./xref/rest/db2/SecondAccountRepository.html#L6">6</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
@@ -410,25 +389,25 @@
 <div class="section">
 <h3 id="rest.db2.SecondDsConfig.java">rest/db2/SecondDsConfig.java</h3>
 <table border="0" class="table table-striped">
-<tr class="a">
+<tr class="b">
 <th>Severidade</th>
 <th>Category</th>
 <th>Regra</th>
 <th>Mensagem</th>
 <th>Linha</th></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'javax.persistence.EntityManagerFactory' est&#xe1; na ordem errada. Deve estar no 'STANDARD_JAVA_PACKAGE', grupo espera 'THIRD_PARTY_PACKAGE' nesta linha.</td>
 <td><a href="./xref/rest/db2/SecondDsConfig.html#L5">5</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
 <td>Declara&#xe7;&#xe3;o de importa&#xe7;&#xe3;o para 'javax.sql.DataSource' est&#xe1; na ordem errada. Deve estar no 'STANDARD_JAVA_PACKAGE', grupo espera 'THIRD_PARTY_PACKAGE' nesta linha.</td>
 <td><a href="./xref/rest/db2/SecondDsConfig.html#L6">6</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td><img src="images/icon_warning_sml.gif" alt="" />&#160;Alerta</td>
 <td>imports</td>
 <td>CustomImportOrder</td>
