@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1549837571060" clover="4.3.0">
+   <project name="springing 0.1.0" timestamp="1549837119734">
+      <metrics coveredelements="24" complexity="12" loc="275" methods="12" classes="10" statements="14" packages="3" coveredconditionals="0" coveredmethods="11" elements="26" ncloc="211" files="9" conditionals="0" coveredstatements="13"/>
+      <package name="rest">
+         <metrics coveredelements="8" complexity="4" loc="84" methods="4" classes="4" statements="6" coveredconditionals="0" coveredmethods="3" elements="10" ncloc="63" files="3" conditionals="0" coveredstatements="5"/>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/Account.java" name="Account.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="13" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="8" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="Account">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/AccountRepository.java" name="AccountRepository.java">
+            <metrics coveredelements="8" coveredconditionals="0" complexity="3" loc="52" coveredmethods="3" methods="3" elements="8" classes="2" ncloc="41" statements="5" conditionals="0" coveredstatements="5"/>
+            <class name="AccountRepository">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="1" coveredmethods="1" methods="1" elements="4" statements="3" conditionals="0" coveredstatements="3"/>
+            </class>
+            <class name="AccountRepository.Accounts">
+               <metrics coveredelements="4" coveredconditionals="0" complexity="2" coveredmethods="2" methods="2" elements="4" statements="2" conditionals="0" coveredstatements="2"/>
+            </class>
+            <line complexity="1" visibility="public" signature="get() : HttpEntity&lt;Accounts&gt;" num="31" count="1" type="method"/>
+            <line num="33" count="1" type="stmt"/>
+            <line num="35" count="1" type="stmt"/>
+            <line num="36" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="Accounts(Iterable&lt;Account&gt;)" num="43" count="1" type="method"/>
+            <line num="45" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="getContent() : Iterable&lt;Account&gt;" num="48" count="1" type="method"/>
+            <line num="49" count="1" type="stmt"/>
+         </file>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/Application.java" name="Application.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="1" loc="19" coveredmethods="0" methods="1" elements="2" classes="1" ncloc="14" statements="1" conditionals="0" coveredstatements="0"/>
+            <class name="Application">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="1" coveredmethods="0" methods="1" elements="2" statements="1" conditionals="0" coveredstatements="0"/>
+            </class>
+            <line complexity="1" visibility="public" signature="main(String[]) : void" num="15" count="0" type="method"/>
+            <line num="16" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="rest.db1">
+         <metrics coveredelements="8" complexity="4" loc="97" methods="4" classes="3" statements="4" coveredconditionals="0" coveredmethods="4" elements="8" ncloc="76" files="3" conditionals="0" coveredstatements="4"/>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/db1/FirstAccount.java" name="FirstAccount.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="27" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="18" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="FirstAccount">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/db1/FirstAccountRepository.java" name="FirstAccountRepository.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="13" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="9" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="FirstAccountRepository">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/db1/FirstDsConfig.java" name="FirstDsConfig.java">
+            <metrics coveredelements="8" coveredconditionals="0" complexity="4" loc="57" coveredmethods="4" methods="4" elements="8" classes="1" ncloc="49" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="FirstDsConfig">
+               <metrics coveredelements="8" coveredconditionals="0" complexity="4" coveredmethods="4" methods="4" elements="8" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="firstDataSourceProperties() : DataSourceProperties" num="28" count="1" type="method"/>
+            <line num="32" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="firstDataSource() : HikariDataSource" num="35" count="1" type="method"/>
+            <line num="39" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="firstEntityManagerFactory(EntityManagerFactoryBuilder,DataSource) : LocalContainerEntityManagerFactoryBean" num="43" count="1" type="method"/>
+            <line num="47" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="firstTransactionManager(EntityManagerFactory) : PlatformTransactionManager" num="51" count="1" type="method"/>
+            <line num="55" count="1" type="stmt"/>
+         </file>
+      </package>
+      <package name="rest.db2">
+         <metrics coveredelements="8" complexity="4" loc="94" methods="4" classes="3" statements="4" coveredconditionals="0" coveredmethods="4" elements="8" ncloc="72" files="3" conditionals="0" coveredstatements="4"/>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/db2/SecondAccount.java" name="SecondAccount.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="27" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="18" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="SecondAccount">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/db2/SecondAccountRepository.java" name="SecondAccountRepository.java">
+            <metrics coveredelements="0" coveredconditionals="0" complexity="0" loc="14" coveredmethods="0" methods="0" elements="0" classes="1" ncloc="9" statements="0" conditionals="0" coveredstatements="0"/>
+            <class name="SecondAccountRepository">
+               <metrics coveredelements="0" coveredconditionals="0" complexity="0" coveredmethods="0" methods="0" elements="0" statements="0" conditionals="0" coveredstatements="0"/>
+            </class>
+         </file>
+         <file path="/home/paulo/Repos/springing/src/main/java/rest/db2/SecondDsConfig.java" name="SecondDsConfig.java">
+            <metrics coveredelements="8" coveredconditionals="0" complexity="4" loc="53" coveredmethods="4" methods="4" elements="8" classes="1" ncloc="45" statements="4" conditionals="0" coveredstatements="4"/>
+            <class name="SecondDsConfig">
+               <metrics coveredelements="8" coveredconditionals="0" complexity="4" coveredmethods="4" methods="4" elements="8" statements="4" conditionals="0" coveredstatements="4"/>
+            </class>
+            <line complexity="1" visibility="public" signature="secondDataSourceProperties() : DataSourceProperties" num="27" count="1" type="method"/>
+            <line num="30" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="secondDataSource() : HikariDataSource" num="33" count="1" type="method"/>
+            <line num="36" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="secondEntityManagerFactory(EntityManagerFactoryBuilder,DataSource) : LocalContainerEntityManagerFactoryBean" num="40" count="1" type="method"/>
+            <line num="44" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="secondTransactionManager(EntityManagerFactory) : PlatformTransactionManager" num="48" count="1" type="method"/>
+            <line num="51" count="1" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject name="springing 0.1.0" timestamp="1549837119734">
+      <metrics coveredelements="48" complexity="8" loc="187" methods="8" classes="1" statements="40" packages="1" coveredconditionals="0" coveredmethods="8" elements="48" ncloc="137" files="1" conditionals="0" coveredstatements="40"/>
+      <package name="rest">
+         <metrics coveredelements="48" complexity="8" loc="187" methods="8" classes="1" statements="40" coveredconditionals="0" coveredmethods="8" elements="48" ncloc="137" files="1" conditionals="0" coveredstatements="40"/>
+         <file path="/home/paulo/Repos/springing/src/test/java/rest/RepositoriesTests.java" name="RepositoriesTests.java">
+            <metrics coveredelements="48" coveredconditionals="0" complexity="8" loc="187" coveredmethods="8" methods="8" elements="48" classes="1" ncloc="137" statements="40" conditionals="0" coveredstatements="40"/>
+            <class name="RepositoriesTests">
+               <metrics coveredelements="48" complexity="8" methods="8" testruns="7" statements="40" coveredconditionals="0" coveredmethods="8" elements="48" testfailures="0" testduration="0.9289999999999999" conditionals="0" coveredstatements="40" testpasses="7"/>
+            </class>
+            <line complexity="1" visibility="public" signature="deleteAllBeforeTests() : void" num="41" count="7" type="method"/>
+            <line num="43" count="7" type="stmt"/>
+            <line num="44" count="7" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldReturnRepositoryIndex() : void" num="47" testsuccess="true" count="1" testduration="0.015" type="method"/>
+            <line num="50" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldCreateEntity() : void" num="56" testsuccess="true" count="1" testduration="0.029" type="method"/>
+            <line num="59" count="1" type="stmt"/>
+            <line num="63" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldRetrieveEntity() : void" num="68" testsuccess="true" count="1" testduration="0.035" type="method"/>
+            <line num="71" count="1" type="stmt"/>
+            <line num="75" count="1" type="stmt"/>
+            <line num="76" count="1" type="stmt"/>
+            <line num="79" count="1" type="stmt"/>
+            <line num="83" count="1" type="stmt"/>
+            <line num="84" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldQueryEntity() : void" num="88" testsuccess="true" count="1" testduration="0.583" type="method"/>
+            <line num="91" count="1" type="stmt"/>
+            <line num="94" count="1" type="stmt"/>
+            <line num="98" count="1" type="stmt"/>
+            <line num="101" count="1" type="stmt"/>
+            <line num="105" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldUpdateEntity() : void" num="108" testsuccess="true" count="1" testduration="0.134" type="method"/>
+            <line num="111" count="1" type="stmt"/>
+            <line num="115" count="1" type="stmt"/>
+            <line num="117" count="1" type="stmt"/>
+            <line num="120" count="1" type="stmt"/>
+            <line num="123" count="1" type="stmt"/>
+            <line num="127" count="1" type="stmt"/>
+            <line num="129" count="1" type="stmt"/>
+            <line num="132" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldPartiallyUpdateEntity() : void" num="136" testsuccess="true" count="1" testduration="0.06" type="method"/>
+            <line num="139" count="1" type="stmt"/>
+            <line num="143" count="1" type="stmt"/>
+            <line num="145" count="1" type="stmt"/>
+            <line num="148" count="1" type="stmt"/>
+            <line num="152" count="1" type="stmt"/>
+            <line num="156" count="1" type="stmt"/>
+            <line num="158" count="1" type="stmt"/>
+            <line num="161" count="1" type="stmt"/>
+            <line complexity="1" visibility="public" signature="shouldDeleteEntity() : void" num="166" testsuccess="true" count="1" testduration="0.073" type="method"/>
+            <line num="169" count="1" type="stmt"/>
+            <line num="173" count="1" type="stmt"/>
+            <line num="174" count="1" type="stmt"/>
+            <line num="176" count="1" type="stmt"/>
+            <line num="178" count="1" type="stmt"/>
+            <line num="182" count="1" type="stmt"/>
+            <line num="183" count="1" type="stmt"/>
+            <line num="185" count="1" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>
