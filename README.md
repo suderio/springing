@@ -9,7 +9,11 @@ Criar um exemplo o mais simples possível para mostrar que não é complicado cr
 
 ## Execução e Funcionamento
 
-O servidor irá subir localmente (se executado o jar) ou em um container docker (se a imagem gerada for usada). O path /accounts retorna os resultados de /accounts1 e /accounts2, que estão em duas instâncias H2 distintas em memória.
+O servidor irá subir localmente (se executado o jar) ou em um container docker (se a imagem gerada for usada). O path /account retorna os resultados de /account1 e /account2, que estão em duas instâncias H2 distintas em memória.
+
+Para executar o jar: `java -jar rest-two-datasources-0.1.0.jar`
+
+Para executar a imagem docker: `docker run -p 8080:8080 spring/rest-two-datasources`
 
 ## Estrutura
 
