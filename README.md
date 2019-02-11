@@ -7,6 +7,10 @@
 
 Criar um exemplo o mais simples possível para mostrar que não é complicado criar um microserviço usando Spring que acessa dois datasources diferentes.
 
+## Execução e Funcionamento
+
+O servidor irá subir localmente (se executado o jar) ou em um container docker (se a imagem gerada for usada). O path /accounts retorna os resultados de /accounts1 e /accounts2, que estão em duas instâncias H2 distintas em memória.
+
 ## Estrutura
 
 Cada datasource está em um package (isto é importante). As entidades de exemlo (`FirstAccount` e `SecondAccount`) implementam uma interface `Account` apenas para conveniência do `AccountRepository`, que consulta os dois repositórios.
@@ -25,7 +29,9 @@ As classes anotadas com @Configuration são responsáveis pela configuração do
 
 ## Construção
 
-Obs.: Para abrir no eclipse é preciso instalar o [lombok](https://projectlombok.org)
+`mvn install` irá criar o jar com todas as dependências e fará o build da imagem docker.
+
+Obs.: Para abrir no eclipse (ou outra IDE) é preciso instalar o [lombok](https://projectlombok.org)
 
 ## Documentação
 
