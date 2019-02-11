@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1549840882376" clover="4.3.0">
-   <project name="springing 0.1.0" timestamp="1549840484627">
+<coverage generated="1549844662427" clover="4.3.0">
+   <project name="springing 0.1.0" timestamp="1549844565127">
       <metrics coveredelements="24" complexity="12" loc="269" methods="12" classes="10" statements="14" packages="3" coveredconditionals="0" coveredmethods="11" elements="26" ncloc="206" files="9" conditionals="0" coveredstatements="13"/>
       <package name="rest">
          <metrics coveredelements="8" complexity="4" loc="78" methods="4" classes="4" statements="6" coveredconditionals="0" coveredmethods="3" elements="10" ncloc="58" files="3" conditionals="0" coveredstatements="5"/>
@@ -95,37 +95,37 @@
          </file>
       </package>
    </project>
-   <testproject name="springing 0.1.0" timestamp="1549840484627">
+   <testproject name="springing 0.1.0" timestamp="1549844565127">
       <metrics coveredelements="48" complexity="8" loc="187" methods="8" classes="1" statements="40" packages="1" coveredconditionals="0" coveredmethods="8" elements="48" ncloc="137" files="1" conditionals="0" coveredstatements="40"/>
       <package name="rest">
          <metrics coveredelements="48" complexity="8" loc="187" methods="8" classes="1" statements="40" coveredconditionals="0" coveredmethods="8" elements="48" ncloc="137" files="1" conditionals="0" coveredstatements="40"/>
          <file path="/home/paulo/Repos/springing/src/test/java/rest/RepositoriesTests.java" name="RepositoriesTests.java">
             <metrics coveredelements="48" coveredconditionals="0" complexity="8" loc="187" coveredmethods="8" methods="8" elements="48" classes="1" ncloc="137" statements="40" conditionals="0" coveredstatements="40"/>
             <class name="RepositoriesTests">
-               <metrics coveredelements="48" complexity="8" methods="8" testruns="7" statements="40" coveredconditionals="0" coveredmethods="8" elements="48" testfailures="0" testduration="1.096" conditionals="0" coveredstatements="40" testpasses="7"/>
+               <metrics coveredelements="48" complexity="8" methods="8" testruns="7" statements="40" coveredconditionals="0" coveredmethods="8" elements="48" testfailures="0" testduration="1.02" conditionals="0" coveredstatements="40" testpasses="7"/>
             </class>
             <line complexity="1" visibility="public" signature="deleteAllBeforeTests() : void" num="41" count="7" type="method"/>
             <line num="43" count="7" type="stmt"/>
             <line num="44" count="7" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldReturnRepositoryIndex() : void" num="47" testsuccess="true" count="1" testduration="0.022" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldReturnRepositoryIndex() : void" num="47" testsuccess="true" count="1" testduration="0.018" type="method"/>
             <line num="50" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldCreateEntity() : void" num="56" testsuccess="true" count="1" testduration="0.043" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldCreateEntity() : void" num="56" testsuccess="true" count="1" testduration="0.032" type="method"/>
             <line num="59" count="1" type="stmt"/>
             <line num="63" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldRetrieveEntity() : void" num="68" testsuccess="true" count="1" testduration="0.055" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldRetrieveEntity() : void" num="68" testsuccess="true" count="1" testduration="0.045" type="method"/>
             <line num="71" count="1" type="stmt"/>
             <line num="75" count="1" type="stmt"/>
             <line num="76" count="1" type="stmt"/>
             <line num="79" count="1" type="stmt"/>
             <line num="83" count="1" type="stmt"/>
             <line num="84" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldQueryEntity() : void" num="88" testsuccess="true" count="1" testduration="0.658" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldQueryEntity() : void" num="88" testsuccess="true" count="1" testduration="0.636" type="method"/>
             <line num="91" count="1" type="stmt"/>
             <line num="94" count="1" type="stmt"/>
             <line num="98" count="1" type="stmt"/>
             <line num="101" count="1" type="stmt"/>
             <line num="105" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldUpdateEntity() : void" num="108" testsuccess="true" count="1" testduration="0.172" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldUpdateEntity() : void" num="108" testsuccess="true" count="1" testduration="0.161" type="method"/>
             <line num="111" count="1" type="stmt"/>
             <line num="115" count="1" type="stmt"/>
             <line num="117" count="1" type="stmt"/>
@@ -134,7 +134,7 @@
             <line num="127" count="1" type="stmt"/>
             <line num="129" count="1" type="stmt"/>
             <line num="132" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldPartiallyUpdateEntity() : void" num="136" testsuccess="true" count="1" testduration="0.073" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldPartiallyUpdateEntity() : void" num="136" testsuccess="true" count="1" testduration="0.069" type="method"/>
             <line num="139" count="1" type="stmt"/>
             <line num="143" count="1" type="stmt"/>
             <line num="145" count="1" type="stmt"/>
@@ -143,7 +143,7 @@
             <line num="156" count="1" type="stmt"/>
             <line num="158" count="1" type="stmt"/>
             <line num="161" count="1" type="stmt"/>
-            <line complexity="1" visibility="public" signature="shouldDeleteEntity() : void" num="166" testsuccess="true" count="1" testduration="0.073" type="method"/>
+            <line complexity="1" visibility="public" signature="shouldDeleteEntity() : void" num="166" testsuccess="true" count="1" testduration="0.059" type="method"/>
             <line num="169" count="1" type="stmt"/>
             <line num="173" count="1" type="stmt"/>
             <line num="174" count="1" type="stmt"/>
