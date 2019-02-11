@@ -5,7 +5,7 @@
 
 ## Objetivo
 
-Criar um exemplo o mais simples possível para mostrar que não é complicado criar um microserviço usando Spring que acessa dois datasources diferentes.
+Criar um exemplo o mais simples possível de um microserviço usando Spring que acessa dois datasources diferentes.
 
 ## Execução e Funcionamento
 
